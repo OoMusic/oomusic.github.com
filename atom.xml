@@ -4,7 +4,7 @@
   <title><![CDATA[Lukaen's Blog]]></title>
   <link href="http://OoMusic.github.com/atom.xml" rel="self"/>
   <link href="http://OoMusic.github.com/"/>
-  <updated>2012-10-29T11:46:23+08:00</updated>
+  <updated>2012-10-29T18:10:15+08:00</updated>
   <id>http://OoMusic.github.com/</id>
   <author>
     <name><![CDATA[Lukaen]]></name>
@@ -18,7 +18,28 @@
     <link href="http://OoMusic.github.com/blog/2012/10/25/test/"/>
     <updated>2012-10-25T21:33:00+08:00</updated>
     <id>http://OoMusic.github.com/blog/2012/10/25/test</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<h2>中文不会乱码吧？</h2>
+
+<h1>怎么放视频和图片呢？</h1>
+
+<h2>怎么写代码呢？</h2>
+
+<pre><code>#include&lt;iostream&gt;
+using namespace std;
+int main()
+{
+  int a,b;
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  return 0;
+}
+</code></pre>
+
+<p><img src="http://OoMusic.github.com/images/HeadBg.jpg" title="HeadBackground" alt="img" /></p>
 ]]></content>
   </entry>
   
