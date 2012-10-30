@@ -4,7 +4,7 @@
   <title><![CDATA[Lukaen's Blog]]></title>
   <link href="http://OoMusic.github.com/atom.xml" rel="self"/>
   <link href="http://OoMusic.github.com/"/>
-  <updated>2012-10-30T18:51:04+08:00</updated>
+  <updated>2012-10-31T01:52:14+08:00</updated>
   <id>http://OoMusic.github.com/</id>
   <author>
     <name><![CDATA[Lukaen]]></name>
@@ -50,8 +50,8 @@ mac下最好安装homebrew，可以获取到不少开源软件，不知道homebr
 
 <p>安装ruby</p>
 
-<pre><code>    $rvm install 1.9.3
-    $rvm 1.9.3 --default
+<pre><code>$rvm install 1.9.3
+$rvm 1.9.3 --default
 </code></pre>
 
 <p>安装Pow</p>
@@ -59,10 +59,10 @@ mac下最好安装homebrew，可以获取到不少开源软件，不知道homebr
 <pre><code>$curl get.pow.cx | sh
 </code></pre>
 
-<p>先cd到一个目录，比如Desktop，然后下载安装Octopress:</p>
+<p>先cd到一个目录，比如Desktop，然后下载安装Octopress</p>
 
-<pre><code>    $git clone git://github.com/imathis/octopress.git octopress
-    $cd octopress
+<pre><code>$git clone git://github.com/imathis/octopress.git octopress
+$cd octopress
 </code></pre>
 
 <p>安装配置环境</p>
@@ -77,9 +77,9 @@ mac下最好安装homebrew，可以获取到不少开源软件，不知道homebr
 
 <p>继续配置环境</p>
 
-<pre><code>    $rbenv rehash
-    $bundle install
-    $rake install
+<pre><code>$rbenv rehash
+$bundle install
+$rake install
 </code></pre>
 
 <p>这样就安装好Octopress。
