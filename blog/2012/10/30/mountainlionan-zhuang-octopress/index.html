@@ -230,7 +230,7 @@ $rake install
 <aside class="sidebar">
   
     <section>
-  <h1>Recent Posts</h1>
+  <h1>更新文章</h1>
   <ul id="recent_posts">
     
       <li class="post">
@@ -250,8 +250,6 @@ $rake install
     <li class="loading">Status updating...</li>
   </ul>
   
-  <a href="https://github.com/OoMusic">@OoMusic</a> on GitHub
-  
   <script type="text/javascript">
     $.domReady(function(){
         if (!window.jXHR){
@@ -265,7 +263,7 @@ $rake install
         github.showRepos({
             user: 'OoMusic',
             count: 6,
-            skip_forks: true,
+            skip_forks: false,
             target: '#gh_repos'
         });
     });
