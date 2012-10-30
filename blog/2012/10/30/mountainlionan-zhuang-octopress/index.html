@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Lukaen's Blog</title>
+  <title>MountainLion 安装Octopress - Lukaen's Blog</title>
   <meta name="author" content="Lukaen">
 
   
-  <meta name="description" content="">
+  <meta name="description" content="这是我第一次试着做一个blog，爬了很多文之后，终于觉得用Octopress+github来做第一次尝试。 1、现在来说说mac下要先做好的准备： 安装gcc，xcode4.2以上自带，也就是说安装过xcode的可以忽略之。
+安装git，一般系统自带，可以在终端使用git --version看看 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://OoMusic.github.com/">
+  <link rel="canonical" href="http://OoMusic.github.com/blog/2012/10/30/mountainlionan-zhuang-octopress/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,15 +64,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/10/30/mountainlionan-zhuang-octopress/">MountainLion 安装Octopress</a></h1>
+      <h1 class="entry-title">MountainLion 安装Octopress</h1>
     
     
       <p class="meta">
@@ -94,62 +92,130 @@
   </header>
 
 
-  <div class="entry-content"></div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/10/30/mountainlionan-zhuang-octopress/">Read on &rarr;</a>
-    </footer>
-  
+<div class="entry-content"><!-- more -->
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/25/test/">Test</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>这是我第一次试着做一个blog，爬了很多文之后，终于觉得用Octopress+github来做第一次尝试。</p>
 
+<p>1、现在来说说mac下要先做好的准备：</p>
 
+<pre><code>安装gcc，xcode4.2以上自带，也就是说安装过xcode的可以忽略之。
+安装git，一般系统自带，可以在终端使用git --version看看。
+安装ruby1.9以上，这个直接度娘到官网，它有提供终端下载的办法。
+mac下最好安装homebrew，可以获取到不少开源软件，不知道homebrew的度娘一下吧。
+</code></pre>
 
+<p>2、下面来说说本地安装Octopress的具体安装过程：
+安装homebrew</p>
 
+<pre><code>$ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)
+</code></pre>
 
+<p>xcode最新版可以在appstore上面直接下载安装，如果网络不好，就自己找资源吧。
+安装git</p>
 
+<pre><code>$brew install git(安装过不需要重复安装)。
+</code></pre>
 
+<p>安装RVM</p>
 
-  
+<pre><code>$bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseg ... ripts/rvm-installer)
+</code></pre>
 
+<p>安装ruby</p>
 
-<time datetime="2012-10-25T21:33:00+08:00" pubdate data-updated="true">Oct 25<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
+<pre><code>$rvm install 1.9.3
+$rvm 1.9.3 --default
+</code></pre>
 
+<p>安装Pow</p>
 
-  <div class="entry-content"></div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/10/25/test/">Read on &rarr;</a>
-    </footer>
-  
+<pre><code>$curl get.pow.cx | sh
+</code></pre>
 
+<p>先cd到一个目录，比如Desktop，然后下载安装Octopress:</p>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+<pre><code>$git clone git://github.com/imathis/octopress.git octopress
+$cd octopress
+</code></pre>
+
+<p>安装配置环境</p>
+
+<pre><code>$gem install bundler
+</code></pre>
+
+<p>安装rbenv，可以度娘rbenv找到安装方法</p>
+
+<pre><code>$ git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+</code></pre>
+
+<p>继续配置环境</p>
+
+<pre><code>$rbenv rehash
+$bundle install
+$rake install
+</code></pre>
+
+<p>这样就安装好Octopress。
+想要看到Octopress的默认主题效果，可以在终端输入rake preview并在浏览器输入localhost:4000预览到。</p>
+
+<p>3、发布到github上，你需要一个git账户。</p>
+
+<h1>（待更新）</h1>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Lukaen</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-30T11:17:00+08:00" pubdate data-updated="true">Oct 30<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://OoMusic.github.com/blog/2012/10/30/mountainlionan-zhuang-octopress/" data-via="" data-counturl="http://OoMusic.github.com/blog/2012/10/30/mountainlionan-zhuang-octopress/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/10/25/test/" title="Previous Post: test">&laquo; test</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -170,7 +236,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/OoMusic">@OoMusic</a> on GitHub
@@ -204,6 +270,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -218,7 +285,10 @@
       var disqus_shortname = 'Lukaen';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://OoMusic.github.com/blog/2012/10/30/mountainlionan-zhuang-octopress/';
+        var disqus_url = 'http://OoMusic.github.com/blog/2012/10/30/mountainlionan-zhuang-octopress/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
