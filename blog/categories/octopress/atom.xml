@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Lukaen's Blog]]></title>
-  <link href="http://OoMusic.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | Lukaen's Blog]]></title>
+  <link href="http://OoMusic.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://OoMusic.github.com/"/>
   <updated>2012-10-31T12:30:13+08:00</updated>
   <id>http://OoMusic.github.com/</id>
@@ -88,36 +88,6 @@ $rake install
 <p>3、发布到github上，你需要一个git账户。</p>
 
 <h1>（待更新）</h1>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[test]]></title>
-    <link href="http://OoMusic.github.com/blog/2012/10/25/test/"/>
-    <updated>2012-10-25T21:33:00+08:00</updated>
-    <id>http://OoMusic.github.com/blog/2012/10/25/test</id>
-    <content type="html"><![CDATA[<!-- more -->
-
-
-<h2>中文不会乱码吧？</h2>
-
-<h1>怎么放视频和图片呢？</h1>
-
-<h2>怎么写代码呢？</h2>
-
-<pre><code>#include&lt;iostream&gt;
-using namespace std;
-int main()
-{
-  int a,b;
-  a=a+b;
-  b=a-b;
-  a=a-b;
-  return 0;
-}
-</code></pre>
-
-<p><img src="http://OoMusic.github.com/images/HeadBg.jpg" title="HeadBackground" alt="img" /></p>
 ]]></content>
   </entry>
   
