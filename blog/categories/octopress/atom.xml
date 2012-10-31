@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Lukaen's Blog]]></title>
   <link href="http://OoMusic.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://OoMusic.github.com/"/>
-  <updated>2012-10-31T12:37:10+08:00</updated>
+  <updated>2012-10-31T12:39:57+08:00</updated>
   <id>http://OoMusic.github.com/</id>
   <author>
     <name><![CDATA[Lukaen]]></name>
@@ -18,10 +18,7 @@
     <link href="http://OoMusic.github.com/blog/2012/10/30/mountainlionan-zhuang-octopress/"/>
     <updated>2012-10-30T11:17:00+08:00</updated>
     <id>http://OoMusic.github.com/blog/2012/10/30/mountainlionan-zhuang-octopress</id>
-    <content type="html"><![CDATA[<!-- more -->
-
-
-<p>这是我第一次试着做一个blog，爬了很多文之后，终于觉得用Octopress+github来做第一次尝试。</p>
+    <content type="html"><![CDATA[<p>这是我第一次试着做一个blog，爬了很多文之后，终于觉得用Octopress+github来做第一次尝试。</p>
 
 <p>1、现在来说说mac下要先做好的准备：</p>
 
@@ -30,6 +27,9 @@
 安装ruby1.9以上，这个直接度娘到官网，它有提供终端下载的办法。
 mac下最好安装homebrew，可以获取到不少开源软件，不知道homebrew的度娘一下吧。
 </code></pre>
+
+<!-- more -->
+
 
 <p>2、下面来说说本地安装Octopress的具体安装过程：
 安装homebrew</p>
